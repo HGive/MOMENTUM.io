@@ -14,31 +14,36 @@
     <script defer src="js/weather.js"></script>
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    <div class="container">
+        <h2 id="clock">00:00:00</h2>
+        
+        <form id="todo-form">
+            <input required type="text" placeholder="Write To Do and Press">
+        </form>
 
-    <form class="hidden" id="login-form">
-        <input type="text" maxlength="5" placeholder="What is your name?">
-        <button>Log In</button>
-    </form>
-    
-    <h1 id="greeting" class="hidden"></h1>
-    
-    <form id="todo-form">
-        <input required type="text" placeholder="Write To Do and Press">
-    </form>
-    <ul id="todo-list">
-    </ul>
+        <div>
+            <form class="hidden" id="login-form">
+                <input type="text" maxlength="5" placeholder="What is your name?">
+                <button>Log In</button>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div id="weather">
+            <span></span><br>
+            <span id="second"></span><br>
+            <span></span>
+        </div>
+        <ul id="todo-list">
+        </ul>
+        <div></div>
+        <div></div>
+        <div id="quote">
+            <span></span><br>
+            <span></span>
+        </div>
 
 
-    <div id="quote">
-        <span></span>
-        <span></span>
     </div>
-
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-
+    
 </body>
 </html>
